@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <style>
+        @font-face {
+            font-family: Lalezar;
+            src: url(./fonts/Lalezar-Regular.ttf);
+        }
+        header {
+            width: auto;
+            height: 75px;
+            background-color: rgb(20, 20, 20);
+            justify-content: right;
+            align-items: center;
+            display: flex;
+            padding-right: 70px;
+            z-index: 10;
+            position: sticky;
+            top: 0;
+        }
+        .head {
+            color: white;
+            font-size: 18px;
+            margin-left: 20px;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+        }
+        .he {
+            position: absolute;
+            left: 100px;
+            top: 8px; 
+            color: white;
+        }
+        .sa {
+            position: absolute;
+            left: 188px;
+            top: 8px;
+            color: rgb(255, 50, 50);
+        }
+        .con {
+            position: absolute;
+            left: 50px;
+            top: 23px;
+            font-size: 35px;
+            color: rgb(255, 50, 50);
+        }
+        .main {
+            width: auto;
+            height: 500px;
+            background-image: url(./img6h.png);
+            margin-top: 0;
+            z-index: 1;
+            background:
+            linear-gradient(to left, rgba(10,12,25,0.95) 0%, rgba(10,12,25,0.6) 40%, transparent 80%),
+            url("img6.png") center / cover no-repeat;
+
+        }
+        .welcome {
+            position: absolute;
+            right: 70px;
+            top: 130px;
+            color: white;
+        }
+        .white {
+            position: absolute;
+            top: 170px;
+            right: 180px;
+            color: white;
+            font-size: 40px;
+        }
+        .red {
+            position: absolute;
+            top: 170px;
+            right: 70px;
+            color: rgb(255, 50, 50);
+            font-size: 40px;
+        }
+        .love {
+            color: white;
+            position: absolute;
+            right: 70px;
+            top: 250px;
+            font-size: 18px;
+        }
+        .love2 {
+            color: white;
+            position: absolute;
+            right: 70px;
+            top: 280px;
+            font-size: 18px;
+        }
+        .btn {
+            color: white;
+            background-color: rgb(255, 50, 50);
+            width: 130px;
+            height: 40px;
+            border: 1px solid rgb(255, 50, 50);
+            border-radius: 24px;
+            font-size: 16px;
+            position: absolute;
+            right: 80px;
+            top: 350px;
+        }
+        .section2 {
+            background-color: rgb(25, 29, 34);
+            margin-top: -20px;
+            width: auto;
+            height: 500px;
+        }
+        .about-me {
+            border-bottom: 3px solid rgb(255, 50, 50);
+            width: 90px;
+            position: absolute;
+            left: 660px;
+            top: 600px;
+            color: white;
+            font-size: 25px;
+        }
+        .desc {
+            font-size: 18px;
+            color: white;
+            position: absolute;
+            right: 300px;
+            top: 700px;
+        }
+        .desc2 {
+            font-size: 18px;
+            color: white;
+            position: absolute;
+            right: 300px;
+            top: 730px;
+        }
+        .desc3 {
+            font-size: 18px;
+            color: white;
+            position: absolute;
+            right: 300px;
+            top: 760px;
+        }
+        .desc4 {
+            font-size: 18px;
+            color: white;
+            position: absolute;
+            right: 300px;
+            top: 790px;
+        }
+        .about-me-image {
+            width: 550px;
+            height: 350px;
+            position: absolute;
+            left: 20px;
+            top: 600px;
+            border-radius: 10px;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .icon1 {
+            color: rgb(255, 50, 50);
+            position: absolute;
+            top: 900px;
+            right: 610px;
+            font-size: 40px;
+        }
+        .icon2 {
+            color: rgb(255, 50, 50);
+            position: absolute;
+            top: 900px;
+            right: 500px;
+            font-size: 40px;
+        }
+        .icon3 {
+            color: rgb(255, 50, 50);
+            position: absolute;
+            top: 900px;
+            right: 390px;
+            font-size: 40px;
+        }
+        .icon4 {
+            color: rgb(255, 50, 50);
+            position: absolute;
+            top: 900px;
+            right: 280px;
+            font-size: 40px;
+        }
+        .for-icon1 {
+            color: white;
+            position: absolute;
+            top: 930px;
+            right: 623px;
+        }
+        .for-icon2 {
+            color: white;
+            position: absolute;
+            top: 930px;
+            right: 497px;
+        }
+        .for-icon3 {
+            color: white;
+            position: absolute;
+            top: 930px;
+            right: 380px;
+        }
+        .for-icon4 {
+            color: white;
+            position: absolute;
+            top: 930px;
+            right: 265px;
+        }
+        .section3 {
+            background-color: rgb(13, 16, 19);
+            margin-top: -20px;
+            width: auto;
+            height: 600px;
+        }
+        .my-activity {
+            color: white;
+            width: 120px;
+            border-bottom: 3px solid rgb(255, 50, 50);
+            position: absolute;
+            left: 600px;
+            top: 1070px;
+        }
+        .cards {
+            display: flex;
+            position: absolute;
+            top: 1200px;
+        }
+        .card1 {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(18, 21, 25);
+            margin-left: 20px;
+            border: 2px solid rgb(33, 37, 42);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card1-figure {
+            width: 300px;
+            height: 175px;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .card1-image {
+            width: 100%;
+            height: 100%;
+        }
+        .card1-h2 {
+            color: white;
+            margin-right: 20px;
+        }
+        .card1-p {
+            color: white;
+            margin-right: 20px;
+        }
+        .cardlink {
+            color: rgb(255, 50, 50);
+            font-size: 18px;
+            margin-left: 180px;
+            text-decoration: none;
+        }
+        .card2 {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(18, 21, 25);
+            margin-left: 20px;
+            border: 2px solid rgb(33, 37, 42);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card2-figure {
+            width: 300px;
+            height: 175px;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .card2-image {
+            width: 100%;
+            height: 100%;
+        }
+        .card2-h2 {
+            color: white;
+            margin-right: 20px;
+        }
+        .card2-p {
+            color: white;
+            margin-right: 20px;
+        }
+        .card3 {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(18, 21, 25);
+            margin-left: 20px;
+            border: 2px solid rgb(33, 37, 42);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card3-figure {
+            width: 300px;
+            height: 175px;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .card3-image {
+            width: 100%;
+            height: 100%;
+        }
+        .card3-h2 {
+            color: white;
+            margin-right: 20px;
+        }
+        .card3-p {
+            color: white;
+            margin-right: 20px;
+        }.card4 {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(18, 21, 25);
+            margin-left: 20px;
+            border: 2px solid rgb(33, 37, 42);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card4-figure {
+            width: 300px;
+            height: 175px;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .card4-image {
+            width: 100%;
+            height: 100%;
+        }
+        .card4-h2 {
+            color: white;
+            margin-right: 20px;
+        }
+        .card4-p {
+            color: white;
+            margin-right: 20px;
+        }
+        .section4 {
+            width: auto;
+            height: 100px;
+            background-color: rgb(7, 10, 13);
+        }
+        .bottom-icon-one {
+            color: white;
+            font-size: 40px;
+        }
+        .bottom-icon-two {
+            color: white;
+            font-size: 40px;
+        }
+        .bottom-icon-three {
+            color: white;
+            font-size: 40px;
+        }
+        .icons {
+            position: absolute;
+            top: 1670px;
+            left: 100px;
+        }
+        .bottom-desc {
+            color: rgba(134, 139, 143);
+            position: absolute;
+            right: 50px;
+            top: 1670px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav dir="rtl">
+            <a href="#main" class="head">خانه</a>
+            <a href="#section2" class="head">درباره من</a>
+            <a href="#section3" class="head">پروژه ها</a>
+            <a href="#section4" class="head">تماس</a>
+        </nav>
+        <i class="fa-solid fa-gamepad con"></i>
+        <h2 class="he">Hesam</h2><h2 class="sa">Sabri</h2>
+    </header>
+    <div class="main" id="main" dir="rtl">
+            <h3 class="welcome">به سایت من خوش آمدید</h3>
+            <h1 class="white">Hesam</h1><h1 class="red">Sabri</h1>
+            <p class="love">عاشق بازی، تکنولوژی و دنیای گیم هستم.</p>
+            <p class="love2">اینجا میتونید بخشی از علایق و کارهای من رو ببینید.</p>
+            <button type="button" class="btn">⭢ بیشتر بدانید</button>
+    </div>
+    <div class="section2" id="section2">
+        <h2 class="about-me">درباره من</h2>
+        <div class="describ" dir="rtl">
+            <p class="desc">سلام! من حسام هستم. به بازی های ویدیویی، فیلم،</p>
+            <p class="desc2">تکنولوژی و برنامه نویسی علاقه زیادی دارم.</p>
+            <p class="desc3">همیشه سعی میکنم چیزهای جدید یاد بگیرم و</p>
+            <p class="desc4">بهتر از دیروز باشم.</p>
+        </div>
+        <figure class="about-me-image">
+            <img class="image" src="./img2.png" alt="image">
+        </figure>
+        <i class="fa-solid fa-gamepad icon1"></i>
+        <h3 class="for-icon1">بازی</h3>
+        <i class="fa-solid fa-laptop icon2"></i>
+        <h3 class="for-icon2">تکنولوژی</h3>
+        <i class="fa-solid fa-clapperboard icon3"></i>
+        <h3 class="for-icon3">فیلم و سریال</h3>
+        <i class="fa-solid fa-code icon4"></i>
+        <h3 class="for-icon4">برنامه نویسی</h3>
+    </div>
+    <div class="section3" id="section3">
+        <h2 class="my-activity">پروژه های من</h2>
+        <div class="cards">
+            <div class="card1">
+                <figure class="card1-figure">
+                    <img class="card1-image" src="./img5.png" alt="image">
+                </figure>
+                <h2 class="card1-h2" dir="rtl">والپیپر ها</h2>
+                <p class="card1-p" dir="rtl">مجموعه ای از عکس های زیبا و با کیفیت.</p><br><br>
+                <a href="" class="cardlink">⭢ مشاهده بیشتر</a>
+            </div>
+            <div class="card2">
+                <figure class="card2-figure">
+                    <img src="./img3.png" alt="" class="card2-image">
+                </figure>
+                <h2 class="card2-h2" dir="rtl">بازی ها</h2>
+                <p class="card2-p" dir="rtl">معرفی بازی های مورد علاقه ام و نقد و بررسی<br><br> کوتاه.</p>
+                <a href="" class="cardlink">⭢ مشاهده بیشتر</a>
+            </div>
+            <div class="card3">
+                <figure class="card3-figure">
+                    <img src="./img1.png" alt="" class="card3-image">
+                </figure>
+                <h2 class="card3-h2" dir="rtl">تکنولوژی</h2>
+                <p class="card3-p" dir="rtl">مطالب و نکات جالب درباره دنیای تکنولوژی.</p><br><br>
+                <a href="" class="cardlink">⭢ مشاهده بیشتر</a>
+            </div>
+            <div class="card4">
+                <figure class="card4-figure">
+                    <img src="./img4.png" alt="" class="card4-image">
+                </figure>
+                <h2 class="card4-h2" dir="rtl">فیلم و سریال</h2>
+                <p class="card4-p" dir="rtl">معرفی فیلم ها و سریال های علاقه مندم.</p><br><br>
+                <a href="" class="cardlink">⭢ مشاهده بیشتر</a>
+            </div>
+        </div>
+    </div>
+    <div class="section4" id="section4">
+        <div class="icons">
+            <i class="fa-brands fa-youtube bottom-icon-one"></i>
+            <i class="fa-brands fa-instagram bottom-icon-two"></i>
+            <i class="fa-brands fa-telegram bottom-icon-three"></i>
+        </div>
+        <p class="bottom-desc">© 2026 Hesam Sabri. All rights reserved.</p>
+    </div>
+</body>
+</html>
